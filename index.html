@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goleada de Prêmios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header class="topo">
+            <h1>🏆 GOLEADA DE PRÊMIOS ⚽</h1>
+            <p>Seu palpite vale ouro!</p>
+        </header>
+
+        <section class="jogo">
+            <h2>🇧🇷 Brasil x Noruega 🇳🇴</h2>
+            <p>Data: 05/07/2026 • 16h00</p>
+        </section>
+
+        <section class="pagamento">
+            <p>💰 Valor: <strong>R$ 5,00</strong></p>
+            <p>🔑 PIX: <strong>92993963533</strong></p>
+            <button onclick="copiarPix()">Copiar PIX</button>
+        </section>
+
+        <section class="form">
+            <h3>Seu Palpite:</h3>
+            <input type="text" id="nome" placeholder="Nome completo">
+            <input type="text" id="whats" placeholder="WhatsApp com DDD">
+            <div class="placar">
+                <input type="number" id="brasil" placeholder="Gols Brasil" min="0">
+                <span>X</span>
+                <input type="number" id="noruega" placeholder="Gols Noruega" min="0">
+            </div>
+            <input type="file" id="comprovante">
+            <button onclick="enviarPalpite()">Enviar Palpite</button>
+        </section>
+
+        <div id="aviso" class="aviso"></div>
+
+        <section class="premios">
+            <h3>🎁 Prêmios</h3>
+            <p>🥇 1º Lugar: R$ 1.000,00</p>
+            <p>🥈 2º Lugar: R$ 500,00</p>
+            <p>🥉 3º Lugar: R$ 200,00</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
