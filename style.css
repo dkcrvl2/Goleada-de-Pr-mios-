@@ -1,93 +1,49 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
 }
 
-body {
-    background: #063970;
-    padding: 20px;
+body{
+  background:linear-gradient(180deg,#0b1d3a,#07101f);
+  color:#fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  padding:20px;
 }
 
-.app {
-    max-width: 420px;
-    margin: 0 auto;
-    background: white;
-    border-radius: 12px;
-    padding: 25px;
+.card{
+  width:100%;
+  max-width:420px;
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(12px);
+  border-radius:20px;
+  padding:25px;
+  box-shadow:0 10px 30px rgba(0,0,0,.4);
 }
 
-.topo {
-    text-align: center;
-    color: #063970;
-    margin-bottom: 20px;
+h1{
+  text-align:center;
+  color:#FFD700;
+  margin-bottom:10px;
 }
 
-.jogo {
-    background: #e8f0fe;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
-    margin-bottom: 15px;
+.slogan{
+  text-align:center;
+  color:#ddd;
+  margin-bottom:25px;
 }
 
-.pagamento {
-    background: #fff3cd;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
-    margin-bottom: 15px;
+.jogo,.valor,.regras{
+  background:rgba(255,255,255,.08);
+  padding:15px;
+  border-radius:15px;
+  margin-bottom:15px;
 }
 
-.form h3, .premios h3 {
-    color: #063970;
-    margin-bottom: 10px;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    margin: 6px 0;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-}
-
-.placar {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-}
-
-.placar span {
-    font-size: 20px;
-    font-weight: bold;
-    color: red;
-}
-
-button {
-    width: 100%;
-    padding: 12px;
-    background: #28a745;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    margin-top: 8px;
-    cursor: pointer;
-}
-
-.aviso {
-    margin-top: 12px;
-    text-align: center;
-    font-weight: bold;
-    padding: 8px;
-    border-radius: 6px;
-}
-
-.premios {
-    margin-top: 15px;
-    padding-top: 15px;
-    border-top: 1px solid #eee;
-}
+.jogo h2{
+  text-align:center;
+ 
