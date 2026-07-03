@@ -25,18 +25,18 @@
       <p>R$ 5,00</p>
     </div>
 
-    <button>PARTICIPAR AGORA</button>
+    <button onclick="mostrarFormulario()">PARTICIPAR AGORA</button>
 
-    <div class="formulario">
+    <div class="formulario" id="formulario" style="display: none;">
       <h3>📝 Faça seu palpite</h3>
 
       <input type="text" id="nome" placeholder="Nome completo">
-      <input type="tel" id="whatsapp" placeholder="WhatsApp">
+      <input type="tel" id="whatsapp" placeholder="WhatsApp com DDD">
 
       <div class="placar">
-        <input type="number" id="brasil" placeholder="Brasil">
+        <input type="number" id="brasil" placeholder="Gols Brasil" min="0">
         <span>X</span>
-        <input type="number" id="noruega" placeholder="Noruega">
+        <input type="number" id="noruega" placeholder="Gols Noruega" min="0">
       </div>
 
       <button onclick="enviarPalpite()">Enviar Palpite</button>
@@ -45,14 +45,18 @@
     <div class="regras">
       <h3>📜 Regras</h3>
       <p>✔️ Acertou o placar exato? Ganhou!</p>
-      <p>✔️ 20% para o organizador.</p>
-      <p>✔️ 80% para o(s) vencedor(es).</p>
+      <p>✔️ 20% do valor total para o organizador.</p>
+      <p>✔️ 80% para o(s) vencedor(es) — dividido se houver mais de um!</p>
+      <p>✔️ Válido para os 90 minutos + acréscimos.</p>
     </div>
 
   </div>
 </div>
 
+<!-- Biblioteca do Supabase para salvar palpites -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="script.js"></script>
 </body>
 </html>
+
 
