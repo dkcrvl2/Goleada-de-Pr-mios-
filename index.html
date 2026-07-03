@@ -22,13 +22,14 @@
 
     <div class="valor">
       <h3>💰 Participação</h3>
-      <p>R$ 5,00</p>
+      <p>R$ 5,00 por cada palpite</p>
+      <p>💡 Pode fazer quantos palpites quiser!</p>
     </div>
 
-    <button onclick="mostrarFormulario()">PARTICIPAR AGORA</button>
+    <button onclick="mostrarFormulario()">FAZER MEU PALPITE</button>
 
     <div class="formulario" id="formulario" style="display: none;">
-      <h3>📝 Faça seu palpite</h3>
+      <h3>📝 Preencha seu palpite</h3>
 
       <input type="text" id="nome" placeholder="Nome completo">
       <input type="tel" id="whatsapp" placeholder="WhatsApp com DDD">
@@ -39,24 +40,25 @@
         <input type="number" id="noruega" placeholder="Gols Noruega" min="0">
       </div>
 
-      <button onclick="enviarPalpite()">Enviar Palpite</button>
+      <button onclick="enviarPalpite()">Confirmar Palpite</button>
     </div>
 
     <div class="regras">
-      <h3>📜 Regras</h3>
-      <p>✔️ Acertou o placar exato? Ganhou!</p>
+      <h3>📜 Regras do Bolão</h3>
+      <p>✔️ Ganha quem acertar o placar exato!</p>
       <p>✔️ 20% do valor total para o organizador.</p>
       <p>✔️ 80% para o(s) vencedor(es) — dividido se houver mais de um!</p>
       <p>✔️ Válido para os 90 minutos + acréscimos.</p>
+      <p>✔️ Palpites só aceitos até o início do jogo!</p>
     </div>
 
   </div>
 </div>
 
-<!-- Biblioteca do Supabase para salvar palpites -->
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
