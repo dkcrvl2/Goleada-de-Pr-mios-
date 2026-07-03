@@ -22,8 +22,8 @@ async function enviarPalpite() {
       {
         nome: nome,
         whatsapp: whatsapp,
-        brasil: brasil,
-        noruega: noruega
+        🇧🇷brasil: brasil,
+        🇳🇴noruega: noruega
       }
     ]);
 
